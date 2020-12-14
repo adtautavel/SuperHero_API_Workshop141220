@@ -7,7 +7,7 @@ namespace SuperHero_API_Workshop141220.Models
 {
     public class SuperHero
     {
-        //Toker de Superhero.com
+        //Tokens de Superhero.com
         //1375959772747471
 
         public string Id { get; set; }

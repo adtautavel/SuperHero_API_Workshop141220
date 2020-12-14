@@ -28,7 +28,8 @@ namespace SuperHero_API_Workshop141220.Controllers
             string hero1Address = "https://www.superheroapi.com/api.php/1375959772747471/56";
             string hero2Address = "https://www.superheroapi.com/api.php/1375959772747471/5";
             string hero3Address = "https://www.superheroapi.com/api.php/1375959772747471/32";
-
+            
+            // Possibilité de tout mettre dans le même client
             string json1 = hero1.DownloadString(hero1Address);
             string json2 = hero2.DownloadString(hero2Address);
             string json3 = hero3.DownloadString(hero3Address);
