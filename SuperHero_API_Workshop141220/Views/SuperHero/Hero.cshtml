@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SuperHero>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes SuperHero de mes 2</title>
+</head>
+<body>
+    @foreach (SuperHero hero in Model)
+    {
+        <section>
+            <article id="photo">
+                <img src="@hero.Image.url" />
+                <aside>
+                    Nom du SuperHero : @hero.Name
+                </aside>
+
+                <aside>
+                 
+                    Lieu de naissance du blaireau :@hero.Biography
+                </aside>
+              
+
+
+            </article>
+
+       
+       
+        </section>
+       
+      
+        <section>
+
+            <p> Description de sa reum : @hero.Powerstats.Combat </p>
+            <p> Description de sa reum : @hero.Powerstats.Durability </p>
+            <p> Description de sa reum : @hero.Powerstats.Intelligence </p>
+            <p> Description de sa reum : @hero.Powerstats.Power </p>
+            <p> Description de sa reum : @hero.Powerstats.Speed </p>
+            <p> Description de sa reum : @hero.Powerstats.Strength </p>
+
+        </section>
+    }
+
+
+    </body>
+</html>
